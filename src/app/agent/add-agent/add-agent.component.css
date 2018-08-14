@@ -1,0 +1,15 @@
+.bg{
+    margin:70px;
+    padding-left: 300px;
+}
+
+
+	
+.form-container{
+    height:300px;
+	width:500px;
+	border:1px solid;
+	border-radius:20px;
+	padding:40px 60px;
+    margin-top:10%;
+}

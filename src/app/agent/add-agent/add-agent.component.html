@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <title>Bootstrap Example</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ </head>
+<body>
+ 
+  <div class="container bg">
+    <div class="div-space">
+      <label>
+        <input type="radio" name="addAgent" #addAgent>Add Single Agent</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label><input type="radio" name="addAgent">Upload Agent File</label>
+    </div>
+    <div>
+      <form class="form-container" id="formID" >
+        <div class="form-group">
+          <label for="uname">Agent Name :</label>&nbsp;
+          <input type="text" name="uname" placeholder="Agent Name">
+        </div>
+        <div class="form-group">
+            <label for="contactNumber">Contact :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="contactNumber" placeholder="Contact Number">
+        </div>
+        <div class="form-group">
+             <label for="city">City :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="text" name="city" placeholder="City">
+        </div>
+        <div class="form-group">
+             <label for="aid">Agent Id :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <input type="text" name="aid" placeholder="Agent Id">
+        </div>
+        <button class="btn btn-block"type="submit">Add Agent</button>
+        </form>
+    </div>
+  </div>
+</body>

@@ -5,24 +5,23 @@ import {AdminService} from '../admin.service';
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  providers:[AdminService]
+  providers: [AdminService]
 })
 export class LoginComponent  {
-  frmAdminLogin=this.fb.group({
-    name:[''],
-    psw:['']
+  frmAdminLogin = this.fb.group({
+    name: [''],
+    psw: ['']
   });
 
-  constructor(private fb:FormBuilder,private objService:AdminService){}
+  constructor(private fb: FormBuilder, private objService: AdminService) {}
 
-  onSubmit(){
-    //alert(this.loginGroup.value);
-    this.objService.login(this.frmAdminLogin.value).subscribe(data=>{
+  onSubmit() {
+    // alert(this.loginGroup.value);
+    this.objService.login(this.frmAdminLogin.value).subscribe(data => {
       alert(JSON.stringify(data));
     },
-    err=>{
+    err =>  {
       alert(JSON.stringify(err));
-    }
-    )
+     } );
   }
 }

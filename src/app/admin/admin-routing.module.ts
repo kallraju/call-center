@@ -6,6 +6,7 @@ import {LogoutComponent} from '../admin/logout/logout.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent},
+  {path: 'login', component: LoginComponent},
   {path: 'changePassword', component: ChangePasswordComponent},
   {path: 'logout', component: LogoutComponent}
 ];

@@ -1,0 +1,26 @@
+
+.navbar{
+    background:#09ba32;
+    border-radius: 0px;
+    height: 70px;
+    border-bottom-color:rgb(0, 0, 255);
+    border-width: 1px;
+    
+}
+
+ul li{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.dropdown:hover>.dropdown-menu{display: inline;}
+
+.aln{overflow-block: right;}
+a {
+    color: #ff0000;
+    /* text-decoration: none; */
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    font-size: 20px;
+}
+

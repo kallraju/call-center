@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AppComponent } from '../../app.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logout',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./logout.component.css']
 })
 export class LogoutComponent implements OnInit {
-
-  constructor() { }
+  constructor(private objRouter: Router) {
+    localStorage.removeItem('U_Id');
+    this.objRouter.navigate(['']);
+  }
 
   ngOnInit() {
   }

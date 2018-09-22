@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-sm bg-light">
+  <div class="container-fluid">
+     
+     
+       <ul class="nav navbar-nav" id="navpad">
+        
+          <li><a href="#">Home</a></li>
+<!-- ------------------------------------------------------------------- -->       
+         <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Manage Queue</a>
+          <ul class="dropdown-menu">
+              <li><span style="padding-left: 0px;">
+                <a class="dropdown-item" href="#">Add Queue</a></span>
+              </li>
+              <li><span style="padding-left: 0px;">
+                <a class="dropdown-item" href="#">Add CLID</a></span>
+              </li>  
+          </ul>
+          </li>
+<!-- --------------------------------------------------------------------- -->
+          <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Manage Agent</a>
+            <ul class="dropdown-menu ">
+              <li><a routerLink="agent/addAgent" routerLinkActive="active" >Add Agent</a></li>
+              <li><a href="#">Agent-Queue Mapping</a></li>
+              <li><a href="#">Agent-Queue Remove</a></li>
+            </ul>
+          </li>
+<!-- -------------------------------------------------------------------------- -->
+          <li><a href="#">Agent Call Details</a></li>
+<!-- -------------------------------------------------------------------------- -->
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MIS Reports</a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="#">Hourly Report</a></li>
+            </ul>
+          </li>
+<!-- -------------------------------------------------------------------------- -->
+          <li><a  routerLink="admin/changePassword" routerLinkActive="active">Change Password</a></li>
+<!-- -------------------------------------------------------------------------- -->
+          <li><a routerLink="admin/logout">Log Out</a></li>
+<!-- -------------------------------------------------------------------------- -->
+        </ul>
+      </div>
+</nav>
+<router-outlet></router-outlet>
